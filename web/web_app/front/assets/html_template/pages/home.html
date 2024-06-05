@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+
+{% block mi_contenedor %}
+<section id="video-init" class="pt-4">
+    <div class="position-relative">
+        <div class="row position-absolute col-12 text-center ">
+            <p class="fade-in-text text-dark fs-4 bg-primary-subtle border border-primary-subtle rounded-3 d-none d-sm-none d-md-none d-lg-block"><b>Web Python</b></p>
+        </div>
+        <div class="row d-none d-sm-none d-md-none d-lg-block">
+            <video class=""  autoplay muted loop>
+                <source src="/media/4243590-hd_1920_1080_30fps.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+    </div>
+    <div class="container-md">
+        <img src="/media/pexels-lex-photography-1109543.jpg" alt="Web Python" style="width: 40rem;" class="d-block d-sm-block d-md-block d-lg-none">
+    </div>
+    <style>
+        .fade-in-text {animation: fadeIntext 10s;}
+            @keyframes fadeIntext {
+            0% { opacity: 0; }
+            100% { opacity: 1; }
+            }
+        video {height: 700px;}
+        section {background: radial-gradient(#607d8b 15%, #000000 100%);}
+        form {margin-left: 50px;}
+        .asteriskField {display: none;}
+        .labels {font-weight: bold;}
+    </style>
+</section>
+{% endblock %}
